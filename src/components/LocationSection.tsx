@@ -4,7 +4,7 @@ import { MapPin, Clock, Phone, MessageCircle } from "lucide-react";
 
 const LocationSection = () => {
   const whatsappUrl = "https://api.whatsapp.com/send?phone=6287854179686&text=Assalamualaikum,%20saya%20ingin%20booking%20terapi%20bekam%20di%20Rumah%20Sehat%20Al-Fatih";
-  const mapsUrl = "https://share.google/4pWbyv6nZofVgRNCb";
+  const mapsUrl = "https://maps.app.goo.gl/x8S3urhRC8TvJF8t8";
 
   return (
     <section className="py-20 bg-background">
@@ -28,7 +28,7 @@ const LocationSection = () => {
           <div className="animate-slide-in">
             <Card className="overflow-hidden h-full border-border">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9905273284436!2d106.6719!3d-6.2754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTYnMzEuNCJTIDEwNsKwNDAnMTguOCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.327860249687!2d106.6993243747506!3d-6.220426193767597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9d25d5f9965%3A0xf7ae1ea2087b2387!2sRUMAH%20SEHAT%20AL-FATIH!5e0!3m2!1sid!2sid!4v1763521228495!5m2!1sid!2sid"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
