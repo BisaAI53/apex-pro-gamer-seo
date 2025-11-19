@@ -4,7 +4,7 @@ import { MapPin, Clock, Phone, MessageCircle } from "lucide-react";
 
 const LocationSection = () => {
   const whatsappUrl = "https://api.whatsapp.com/send?phone=6287854179686&text=Assalamualaikum,%20saya%20ingin%20booking%20terapi%20bekam%20di%20Rumah%20Sehat%20Al-Fatih";
-  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Jl.+Sunan+Giri+No.8D+Pondok+Pucung+Karang+Tengah+Tangerang";
+  const mapsUrl = "https://share.google/4pWbyv6nZofVgRNCb";
 
   return (
     <section className="py-20 bg-background">
