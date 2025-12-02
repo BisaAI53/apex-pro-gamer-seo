@@ -6,10 +6,12 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LocationSection from "@/components/LocationSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import LoginButton from "@/components/LoginButton";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <LoginButton />
       <HeroSection />
       <AboutSection />
       <BenefitsSection />
