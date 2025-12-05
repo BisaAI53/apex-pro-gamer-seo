@@ -170,33 +170,45 @@ export type Database = {
       }
       patients: {
         Row: {
+          address: string | null
+          complaint: string | null
           created_at: string
           email: string | null
           full_name: string
           id: string
           notes: string | null
+          patient_code: string | null
           phone: string | null
           status: Database["public"]["Enums"]["patient_status"]
+          therapy_date: string | null
           updated_at: string
         }
         Insert: {
+          address?: string | null
+          complaint?: string | null
           created_at?: string
           email?: string | null
           full_name: string
           id?: string
           notes?: string | null
+          patient_code?: string | null
           phone?: string | null
           status?: Database["public"]["Enums"]["patient_status"]
+          therapy_date?: string | null
           updated_at?: string
         }
         Update: {
+          address?: string | null
+          complaint?: string | null
           created_at?: string
           email?: string | null
           full_name?: string
           id?: string
           notes?: string | null
+          patient_code?: string | null
           phone?: string | null
           status?: Database["public"]["Enums"]["patient_status"]
+          therapy_date?: string | null
           updated_at?: string
         }
         Relationships: []
