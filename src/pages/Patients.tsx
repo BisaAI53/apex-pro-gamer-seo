@@ -221,7 +221,7 @@ const Patients = () => {
               Tambah Pasien
             </Button>
           </DialogTrigger>
-          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto sm:max-w-xl md:max-w-2xl">
             <DialogHeader>
               <DialogTitle>{editingPatient ? "Edit Pasien" : "Tambah Pasien Baru"}</DialogTitle>
               <DialogDescription>
