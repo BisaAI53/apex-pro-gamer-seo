@@ -66,7 +66,15 @@ const DashboardLayout = () => {
         .maybeSingle();
 
       if (error) throw error;
-      setUserRole(data?.role || "viewer");
+      
+      const role = data?.role || "viewer";
+      setUserRole(role);
+      
+      // Redirect patients to their dashboard
+      if (role === "patient") {
+        navigate("/patient-dashboard");
+        return;
+      }
     } catch (error) {
       console.error("Error fetching role:", error);
       setUserRole("viewer");

@@ -11,6 +11,9 @@ import Transactions from "./pages/Transactions";
 import Expenses from "./pages/Expenses";
 import Reports from "./pages/Reports";
 import DashboardLayout from "./components/dashboard/DashboardLayout";
+import PatientRegister from "./pages/PatientRegister";
+import PatientLogin from "./pages/PatientLogin";
+import PatientDashboard from "./pages/PatientDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
+          {/* Patient routes */}
+          <Route path="/patient-register" element={<PatientRegister />} />
+          <Route path="/patient-login" element={<PatientLogin />} />
+          <Route path="/patient-dashboard" element={<PatientDashboard />} />
+          {/* Admin dashboard routes */}
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="patients" element={<Patients />} />
