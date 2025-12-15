@@ -168,6 +168,35 @@ export type Database = {
           },
         ]
       }
+      patient_accounts: {
+        Row: {
+          created_at: string
+          id: string
+          patient_id: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          patient_id: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          patient_id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "patient_accounts_patient_id_fkey"
+            columns: ["patient_id"]
+            isOneToOne: true
+            referencedRelation: "patients"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       patients: {
         Row: {
           address: string | null
@@ -276,7 +305,7 @@ export type Database = {
       }
     }
     Enums: {
-      app_role: "admin" | "staff" | "kasir" | "viewer"
+      app_role: "admin" | "staff" | "kasir" | "viewer" | "patient"
       entry_type: "income" | "expense" | "saving"
       patient_status: "calon" | "pasien" | "member" | "langganan_nonmember"
     }
@@ -406,7 +435,7 @@ export type CompositeTypes<
 export const Constants = {
   public: {
     Enums: {
-      app_role: ["admin", "staff", "kasir", "viewer"],
+      app_role: ["admin", "staff", "kasir", "viewer", "patient"],
       entry_type: ["income", "expense", "saving"],
       patient_status: ["calon", "pasien", "member", "langganan_nonmember"],
     },
