@@ -12,7 +12,7 @@ const LoginButton = () => {
           className="bg-white/90 hover:bg-white text-islamic-green-dark shadow-lg"
         >
           <LogIn className="mr-2 h-4 w-4" />
-          Login Admin
+          Login
         </Button>
       </Link>
     </div>
