@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,9 +11,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-islamic-gold">
-              Rumah Sehat Al-Fatih
-            </h3>
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="Logo Rumah Sehat Al-Fatih" className="w-14 h-14 object-contain rounded-lg bg-white p-1" />
+              <h3 className="text-2xl font-bold text-islamic-gold">
+                Rumah Sehat Al-Fatih
+              </h3>
+            </div>
             <p className="text-white/80 text-sm leading-relaxed">
               Pusat terapi bekam sunnah yang mengutamakan kenyamanan, 
               kebersihan, dan ketenangan jiwa.
