@@ -35,8 +35,8 @@ const LocationSection = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Lokasi Rumah Sehat Al-Fatih di Google Maps"
-              />
+                title="Lokasi Rumah Sehat Al-Fatih di Google Maps" />
+
             </Card>
           </div>
 
@@ -54,11 +54,11 @@ const LocationSection = () => {
                     Pd. Pucung, Kec. Karang Tengah<br />
                     Kota Tangerang, Banten 15159
                   </p>
-                  <Button 
+                  <Button
                     asChild
-                    variant="link" 
-                    className="text-islamic-green p-0 h-auto mt-2"
-                  >
+                    variant="link"
+                    className="text-islamic-green p-0 h-auto mt-2">
+
                     <a href={mapsUrl} target="_blank" rel="noopener noreferrer">
                       Lihat di Google Maps →
                     </a>
@@ -76,7 +76,7 @@ const LocationSection = () => {
                   <h3 className="font-semibold text-foreground mb-2">Jam Operasional</h3>
                   <p className="text-muted-foreground">
                     Buka Setiap Hari<br />
-                    <span className="text-islamic-green font-semibold">08.00 – 21.00 WIB</span>
+                    <span className="text-islamic-green font-semibold">08.00 – 23.00 WIB</span>
                   </p>
                 </div>
               </div>
@@ -92,10 +92,10 @@ const LocationSection = () => {
                   <p className="text-muted-foreground mb-4">
                     +62 878-5417-9686
                   </p>
-                  <Button 
+                  <Button
                     asChild
-                    className="w-full bg-islamic-green hover:bg-islamic-green/90 text-white"
-                  >
+                    className="w-full bg-islamic-green hover:bg-islamic-green/90 text-white">
+
                     <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-2 h-5 w-5" />
                       Chat via WhatsApp
@@ -107,8 +107,8 @@ const LocationSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default LocationSection;

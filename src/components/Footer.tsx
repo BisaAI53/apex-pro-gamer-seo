@@ -37,17 +37,17 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-islamic-gold flex-shrink-0" />
-                <a 
-                  href="tel:+6287854179686" 
-                  className="text-white/80 hover:text-white transition-colors"
-                >
+                <a
+                  href="tel:+6287854179686"
+                  className="text-white/80 hover:text-white transition-colors">
+
                   +62 878-5417-9686
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-islamic-gold flex-shrink-0" />
-                <p className="text-white/80">
-                  Buka Setiap Hari: 08.00 – 21.00 WIB
+                <p className="text-white/80">Buka Setiap Hari: 08.00 – 23.00 WIB
+
                 </p>
               </div>
             </div>
@@ -66,8 +66,8 @@ const Footer = () => {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-islamic-gold hover:bg-islamic-gold/90 text-islamic-green-dark font-semibold rounded-lg transition-all duration-300 hover:scale-105"
-            >
+              className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-islamic-gold hover:bg-islamic-gold/90 text-islamic-green-dark font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+
               <MessageCircle className="w-5 h-5" />
               Hubungi Kami
             </a>
@@ -79,13 +79,13 @@ const Footer = () => {
           <p>
             © {currentYear} Rumah Sehat Al-Fatih. Semua hak dilindungi undang-undang.
           </p>
-          <p className="mt-2 text-islamic-gold/80">
-            ☪️ Sehat dengan Sunnah Rasulullah ﷺ
+          <p className="mt-2 text-islamic-gold/80"> Sehat dengan Sunnah Rasulullah ﷺ
+
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;

@@ -8,10 +8,10 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+        style={{ backgroundImage: `url(${heroImage})` }}>
+
         <div className="absolute inset-0 bg-gradient-to-br from-islamic-green/80 via-islamic-green-dark/85 to-islamic-green-dark/90" />
       </div>
 
@@ -25,7 +25,7 @@ const HeroSection = () => {
           {/* Arabic Quote */}
           <div className="mb-6">
             <div className="inline-block px-6 py-3 bg-background/10 backdrop-blur-sm rounded-full border border-islamic-gold/30">
-              <p className="text-islamic-gold text-sm font-medium">☪️ Terapi Bekam Sunnah</p>
+              <p className="text-islamic-gold text-sm font-medium"> Terapi Bekam Sunnah</p>
             </div>
           </div>
 
@@ -51,11 +51,11 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <div className="pt-8">
-            <Button 
+            <Button
               asChild
               size="lg"
-              className="bg-islamic-gold hover:bg-islamic-gold/90 text-islamic-green-dark font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:scale-105 transition-all duration-300"
-            >
+              className="bg-islamic-gold hover:bg-islamic-gold/90 text-islamic-green-dark font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:scale-105 transition-all duration-300">
+
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-6 w-6" />
                 Konsultasi & Booking via WhatsApp
@@ -87,8 +87,8 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2" />
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
